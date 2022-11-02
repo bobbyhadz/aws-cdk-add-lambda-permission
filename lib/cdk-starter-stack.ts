@@ -10,7 +10,7 @@ export class CdkStarterStack extends cdk.Stack {
 
     // 👇 define the Lambda
     const myFunction = new NodejsFunction(this, 'my-function', {
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_16_X,
       handler: 'main',
       entry: path.join(__dirname, `/../src/my-lambda/index.ts`),
     });
